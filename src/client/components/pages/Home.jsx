@@ -4,8 +4,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { APP_NAME } from '../../../shared/config';
 
-const HomePage = () =>
-  (<div>
+const HomePage = () => (
+  <div>
     <Helmet
       meta={[
         { name: 'description', content: 'At HomePage of Hello App' },
@@ -13,6 +13,7 @@ const HomePage = () =>
       ]}
     />
     <h1>At Home Page</h1>
-  </div>);
+  </div>
+);
 
 export default HomePage;

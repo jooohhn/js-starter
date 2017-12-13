@@ -6,8 +6,8 @@ import Message from '../../components/Message';
 
 const title = 'Hello Page';
 
-const HelloPage = () =>
-  (<div>
+const HelloPage = () => (
+  <div>
     <Helmet
       title={title}
       meta={[
@@ -17,6 +17,7 @@ const HelloPage = () =>
     />
     <h1>At HelloPage</h1>
     <Message message="Hello World" />
-  </div>);
+  </div>
+);
 
 export default HelloPage;

@@ -5,8 +5,8 @@ import Helmet from 'react-helmet';
 
 const title = 'Page Not Found';
 
-const NotFoundPage = () =>
-  (<div>
+const NotFoundPage = () => (
+  <div>
     <Helmet
       title={title}
       meta={[
@@ -15,6 +15,7 @@ const NotFoundPage = () =>
       ]}
     />
     <h1>At Not Found</h1>
-  </div>);
+  </div>
+);
 
 export default NotFoundPage;

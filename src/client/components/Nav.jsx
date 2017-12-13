@@ -8,21 +8,22 @@ import {
   NOT_FOUND_DEMO_PAGE_ROUTE
 } from '../../shared/routes';
 
-const Nav = () =>
-  (<nav>
+const Nav = () => (
+  <nav>
     <ul>
       {[
         { route: HOME_PAGE_ROUTE, label: 'Home' },
         { route: HELLO_PAGE_ROUTE, label: 'Say Hello' },
         { route: NOT_FOUND_DEMO_PAGE_ROUTE, label: '404 Demo' }
-      ].map(link =>
-        (<li key={link.route}>
+      ].map(link => (
+        <li key={link.route}>
           <NavLink to={link.route} activeStyle={{ color: 'limegreen' }} exact>
             {link.label}
           </NavLink>
-        </li>)
-      )}
+        </li>
+      ))}
     </ul>
-  </nav>);
+  </nav>
+);
 
 export default Nav;

@@ -11,8 +11,8 @@ import HelloPage from './components/pages/Hello';
 import NotFoundPage from './components/pages/NotFound';
 import { HOME_PAGE_ROUTE, HELLO_PAGE_ROUTE } from '../shared/routes';
 
-const App = () =>
-  (<div>
+const App = () => (
+  <div>
     <Helmet titleTemplate={`%s | ${APP_NAME}`} defaultTitle={APP_NAME} />
     <Nav />
     <Switch>
@@ -20,6 +20,7 @@ const App = () =>
       <Route path={HELLO_PAGE_ROUTE} render={() => <HelloPage />} />
       <Route component={NotFoundPage} />
     </Switch>
-  </div>);
+  </div>
+);
 
 export default App;
