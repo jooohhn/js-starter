@@ -1,6 +1,5 @@
 // @flow
 import path from 'path';
-import webpack from 'webpack';
 import { WDS_PORT } from './src/shared/config';
 import { isProd } from './src/shared/util';
 
@@ -32,20 +31,14 @@ export default {
       }
     ]
   },
-  plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ],
-  devtool: isProd ? false : 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.css']
   },
+  devtool: 'source-map',
   devServer: {
     // port for dev server
     port: WDS_PORT,
-    hot: true,
+    hot: isProd ? true : false,
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
