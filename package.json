@@ -10,6 +10,7 @@
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
     "dev:wds": "cross-env NODE_ENV=development webpack-dev-server  --progress --mode development --config webpack.config.dev.babel.js",
     "prod": "yarn prod:build && yarn prod:start",
+    "prod:analyze": "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=analyze webpack -p --progress --mode production --config webpack.config.analyze.babel.js",
     "prod:build": "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress --mode production --config webpack.config.prod.babel.js",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
     "prod:stop": "pm2 delete server",
@@ -52,6 +53,7 @@
     "stylelint": "^9.1.1",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "webpack": "^4.1.1",
+    "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0",
     "webpack-merge": "^4.1.2"
