@@ -15,7 +15,10 @@ yarn dev
 yarn prod
 
 # Stops production process
-yarn start
+yarn prod:stop
+
+# Analyze bundle size
+yarn prod:analyze
 
 # Run tests
 yarn test
