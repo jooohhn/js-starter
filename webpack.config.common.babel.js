@@ -22,7 +22,8 @@ export default {
         test: /\.css$/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'postcss-loader' }
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader'
         ]
       }
     ]
