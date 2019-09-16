@@ -8,10 +8,10 @@ git clone https://github.com/jooohhn/js-starter.git
 cd js-starter
 yarn
 
-# Runs development @ http://localhost:8080/
+# Runs development @ http://localhost:8000/
 yarn dev
 
-# Runs production @ http://localhost:8080/
+# Runs production @ http://localhost:8000/
 yarn prod
 
 # Stops production process
