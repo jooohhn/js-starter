@@ -2,13 +2,13 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import { APP_NAME } from '../../../shared/config';
+import { APP_NAME } from '../shared/config';
 
 const HomePage = () => (
   <div>
     <Helmet
       meta={[
-        { name: 'description', content: 'At HomePage of Hello App' },
+        { name: 'description', content: 'At HomePage of Home App' },
         { property: 'og:title', content: APP_NAME }
       ]}
     />
