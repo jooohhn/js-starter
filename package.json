@@ -29,7 +29,6 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.1.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
