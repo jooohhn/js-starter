@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import { HOME_PAGE_ROUTE, HELLO_PAGE_ROUTE } from '../shared/routes';
+import '../public/app.global.css'
 
 const App = () => (
   <div>
