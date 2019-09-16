@@ -61,7 +61,6 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "babel-polyfill": "^6.23.0",
     "compression": "^1.6.2",
     "express": "^4.16.3",
     "lodash": "^4.17.4",
