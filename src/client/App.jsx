@@ -5,9 +5,9 @@ import { Switch } from 'react-router';
 import { Route } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import { APP_NAME } from '../shared/config';
-import Nav from './Nav';
-import HomePage from './HomePage';
-import NotFoundPage from './NotFoundPage';
+import Nav from './components/Nav';
+import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 import { HOME_PAGE_ROUTE, HELLO_PAGE_ROUTE } from '../shared/routes';
 
 const App = () => (

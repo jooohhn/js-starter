@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import {
   HOME_PAGE_ROUTE,
   NOT_FOUND_DEMO_PAGE_ROUTE
-} from '../shared/routes';
+} from '../../shared/routes';
 
 const Nav = () => (
   <nav>
