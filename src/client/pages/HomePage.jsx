@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import { APP_NAME } from '../shared/config';
+import { APP_NAME } from '../../shared/config';
 
 const HomePage = () => (
   <div>
